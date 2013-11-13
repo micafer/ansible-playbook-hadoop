@@ -18,8 +18,8 @@
   - gzip
   - openjdk-6-jre-headless
   
-- shell: wget -nd -r -l1 --no-parent ftp://ftp.rediris.es/mirror/Apache/hadoop/common/stable/ -A 'hadoop-1.?.?.tar.gz' && mv hadoop-1.?.?.tar.gz hadoop-1.X.tar.gz creates=/tmp/hadoop-1.X.tar.gz chdir=/tmp
+- shell: wget -nd -r -l1 --no-parent ftp://ftp.rediris.es/mirror/Apache/hadoop/common/stable/ -A 'hadoop-2.?.?.tar.gz' && mv hadoop-2.?.?.tar.gz hadoop-2.X.tar.gz creates=/tmp/hadoop-2.X.tar.gz chdir=/tmp
 
-- shell: tar xzf /tmp/hadoop-1.X.tar.gz && ln -s /opt/hadoop-1.?.? $hadoop_home creates={{ hadoop_home }} chdir=/opt
+- shell: tar xzf /tmp/hadoop-2.X.tar.gz && ln -s /opt/hadoop-2.?.? $hadoop_home creates={{ hadoop_home }} chdir=/opt
 
 - file: dest=/opt/hadoop src={{ hadoop_home }} state=link
