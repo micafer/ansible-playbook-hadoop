@@ -1,1 +1,1 @@
-{{ IM_MASTER_FQDN }}
+{{ hadoop_master }}
