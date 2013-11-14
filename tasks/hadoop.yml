@@ -10,7 +10,7 @@
   
 # Debian related OSs
 - name: Apt install {{ item }}
-  action: apt pkg={{ item }} state=installed
+  action: apt pkg={{ item }} state=installed update_cache=yes cache_valid_time=604800
   when: debian_os
   with_items:
   - wget
