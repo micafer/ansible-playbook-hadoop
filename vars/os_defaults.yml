@@ -1,1 +1,2 @@
 hadoop_home: /opt/hadoop-1.X
+mirrors: [ "ftp://apache.mirrors.pair.com/hadoop/core/stable1/", "http://mirror.cc.columbia.edu/pub/software/apache/hadoop/core/stable1/", "ftp://apache.cs.utah.edu/apache.org/hadoop/core/stable1/" ]
